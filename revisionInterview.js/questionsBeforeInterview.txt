@@ -1,0 +1,43 @@
+----------------------------- EASY --------------------------------
+// LeetCode
+problem: 219. Contains Duplicate II  (using object as map)
+problem: 88. Merge Sorted Array (multiple pointers)
+problem: 231. Power of Two (using loop / using Recursion)
+problem: 206. Reverse Linked List (using Recursion)
+problem: 125. Valid Palindrome 
+problem: 344. Reverse String modifying the input array in-place (Using Two pointers / for loop )
+problem: 412. Fizz Buzz(uisng loop & if-else)
+problem: 704. Binary Search (using Loop / using Recursion) (concept code related question)
+problem: 268. Missing Number(using formula-> missingNumber = sumConsecutive-sum)
+problem: 2114. Maximum Number of Words Found in Sentences(using nested for loop)
+problem: 1672. Richest Customer Wealth(using nested for loop)
+
+
+----------------------------- MEDIUM --------------------------------
+// LeetCode
+problem: 1456. Maximum Number of Vowels in a Substring of Given Length (Sliding Window fixed size)
+problem: 3. Longest Substring Without Repeating Characters (variable Sliding Window)
+problem: 424. Longest Repeating Character Replacement (Using Sliding Window)
+problem: 75. Sort Colors (Multiple pointers concept)
+problem: 167. Two Sum II - Input Array Is Sorted (Two pointers)
+problem: 1823. Find the Winner of the Circular Game (Using Recursion)
+problem: 50. Pow(x, n) (using Recursion)
+problem: 881. Boats to Save People (Two pointers)
+problem:2491.Divide Players Into Teams of Equal Skill(using Two pointers/using frequency counter(Map))(fc-learn here) 
+problem: 1004. Max Consecutive Ones III(Using Sliding Window)(Sliding Window learn from here) // find length of maximum subarray with atmost k 0's
+problem: 904. Fruit Into Baskets(Using Sliding Window) // find length of maximum subarray with atmost k distinct elements
+problem: 912. Sort an Array (Using Quick Sort Algorithm) (concept code Quick Sort)
+problem: 560. Subarray Sum Equals K (Using Prefix Sum concept)
+problem: 442. Find All Duplicates in an Array (Using Negative elements concept)
+problem: 287. Find the Duplicate Number[in an Array] (using "Cycle Detection" algorithm)
+problem: 162. Find Peak Element (Using Binary Search Algorithm with modification)
+
+
+
+
+
+
+----------------------------- HARD --------------------------------
+// LeetCode
+problem:239 Sliding Window Maximum (Maximum of all subarrays of size k)
+problem: 992. Subarrays with K Different Integers(Using Sliding Window)(consider- [count of subarray with Atmost K Different Integers - count of subarray with Atmost K-1 Different Integers])
