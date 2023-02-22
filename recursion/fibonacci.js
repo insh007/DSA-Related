@@ -17,7 +17,8 @@ function fibonacci(n){
 // Time Complexity -> O(n) 
 // space complexity -> O(n)  
 function fib(n){
-    let f = Array.from(n+1)  // extra data structure
+    // let f = Array.from(n+1)  // extra data structure
+    let f = []
     
     f[0] = 0   // 0th term 
     f[1] = 1    // 1st term

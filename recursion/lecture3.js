@@ -30,7 +30,7 @@ function sen(s){
     
     return words.join(" ")
 }
-console.log(sen(s))
+// console.log(sen(s))
 
 
 
@@ -83,14 +83,14 @@ console.log(sen(s))
 // console.log(cap(arr))
 
 // Method :2 (using Recursion) 
-// function cap(arr){
-//     let res = []
-//     //base
-//     if(arr.length == 0) return []
+function cap(arr){
+    let res = []
+    //base
+    if(arr.length == 0) return res
 
-//     let s = arr[0].charAt(0).toUpperCase() + arr[0].slice(1)
-//     res.push(s)
-//     return res.concat(cap(arr.slice(1)))
-// }
-// console.log(cap(['inshad', 'ali', 'khan']))
+    let s = arr[0].charAt(0).toUpperCase() + arr[0].slice(1)
+    res.push(s)
+    return res.concat(cap(arr.slice(1)))
+}
+console.log(cap(['inshad', 'ali', 'khan']))
 

@@ -7,15 +7,25 @@
 
 var containsNearbyDuplicate = function(nums, k) {
     // map approach
-    let obj = {}
+    let map = new Map()
     for(let i=0; i<nums.length; i++){
-        if(nums[i] in obj && i - obj[nums[i]] <= k){
+        if(map.has(nums[i]) && i-map.get(nums[i]) <= k){
             return true
         }
-        obj[nums[i]] = i
+        map.set(nums[i], i)
     }
-    // console.log(obj)
     return false
+
+    // Using Object
+    // let obj = {}
+    // for(let i=0; i<nums.length; i++){
+    //     if(nums[i] in obj && i - obj[nums[i]] <= k){
+    //         return true
+    //     }
+    //     obj[nums[i]] = i
+    // }
+    // // console.log(obj)
+    // return false
 
     // Brute force(worst approach)
     // for(let i=0; i<nums.length; i++){

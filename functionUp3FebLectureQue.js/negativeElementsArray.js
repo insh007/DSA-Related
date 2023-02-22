@@ -43,8 +43,6 @@
 
 // Mehtod: If array is NOT SORTED then use -> Linear Search
 let arr= [2, -5, 5, -7, 8, -3, 9]
-let left = 0
-let right = arr.length-1
 let count = 0
 function negative(arr){
     for(let i=0; i<arr.length; i++){

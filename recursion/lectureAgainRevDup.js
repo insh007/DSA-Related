@@ -4,7 +4,7 @@
 
 // let map = new Map()
 // for(let i=0; i<arr.length; i++){
-    map.set(arr[i], (map.get(arr[i]) || 0) + 1) // assigning values to map as keys and values
+    // map.set(arr[i], (map.get(arr[i]) || 0) + 1) // assigning values to map as keys and values
 
 //     // OR ->  // assigning values to map as keys and values
 //     // if( map.get(arr[i]) == undefined) map.set(arr[i], 1)

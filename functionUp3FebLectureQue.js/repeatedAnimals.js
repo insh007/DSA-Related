@@ -14,6 +14,7 @@ for(let i=0; i<animals.length; i++){
     // map.set(animals[i], 1)
     map.set(animals[i], (map.get(animals[i]) || 0) +1)
 }
+// console.log(map)
 let res = []
 for(let [key, value] of map){
     if(value > 1){

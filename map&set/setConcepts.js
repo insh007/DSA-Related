@@ -50,5 +50,5 @@ for(let item of ar){
     set1.add(item)
 }
 let res = Array.from(set1)
-console.log(set1)
+// console.log(set1)
 // console.log(res)

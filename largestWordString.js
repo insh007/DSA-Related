@@ -12,7 +12,7 @@ function finder(str){
         if(str[i] != " "){
             word += str[i]
         }
-        console.log(word)
+        // console.log(word)
         if(str[i] == " " || i==str.length-1){
             if(word.length > count){
                 count = word.length

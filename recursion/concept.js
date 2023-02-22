@@ -104,4 +104,4 @@ function power(n, exponent){
 
     return n * power(n, exponent-1)
 }
-console.log(power(5,4))
+console.log(power(5,3))

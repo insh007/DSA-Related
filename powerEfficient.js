@@ -18,4 +18,15 @@ function power(a, b){
     return res
 }
 
-console.log(power(5, 3))
+// console.log(power(5, 3))   // TC -> O(logn) & SC -> O(1) 
+
+//Using Recursion 
+
+function p(n, exponent){
+    //base
+    if(exponent == 0)return 1
+    
+    //recursive
+    return n * p(n, exponent-1)
+}
+console.log(p(2, 3)) // TC -> O(exponent) & SC -> O(exponent)
