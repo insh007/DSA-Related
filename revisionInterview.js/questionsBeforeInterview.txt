@@ -36,6 +36,7 @@ problem: 844. Backspace String Compare (Using Stack)
 problem: 496. Next Greater Element I (Using Stack or Map)[variant for 530 medium]
 problem: 66. Plus One (Maths)
 problem: 70. Climbing Stairs (Using DP - Bottom - Top Approach)
+problem: 509. Fibonacci Number (Using DP)
 problem: 144. Binary Tree Preorder Traversal (Using Recursion-DFS)
 problem: 145. Binary Tree Postorder Traversal (Using Recursion-DFS)
 problem: 94. Binary Tree Inorder Traversal (Using Recursion-DFS)
@@ -44,11 +45,12 @@ problem: 226. Invert Binary Tree (Using Recursion-DFS)
 problem: 112. Path Sum (Using Recursion-DFS)
 problem: 100. Same Tree (Using Recursion-DFS)
 problem: 572. Subtree of Another Tree(Using Recursion-DFS)
+problem: 101. Symmetric Tree (Using Recursion-DFS or Using Loop-DFS)
 problem: 543. Diameter of Binary Tree (Using Recursion-DFS)
 
 
-problem: 700. Search in a Binary Search Tree-BST (Using while Loop - BST property use) 
-
+problem: 700. Search in a Binary Search Tree-BST (Using while Loop or Using Recursion -> BST property use) 
+problem: 938. Range Sum of BST (Using Recursion)
 
 
 
@@ -75,6 +77,7 @@ problem: 287. Find the Duplicate Number[in an Array] (using "Cycle Detection" al
 problem: 162. Find Peak Element (Using Binary Search Algorithm with modification)
 problem: 33. Search in Rotated Sorted Array (Using Binary Search Algorithm with modification)
 problem: 34. Find First and Last Position of Element in Sorted Array (Using Binary Search Two Times)
+problem: 540. Single Element in a Sorted Array (Using Binary Search with modification)
 problem: 875. Koko Eating Bananas (Using Binary Search)
 problem: 2187. Minimum Time to Complete Trips (Using Binary Search)
 problem: 74. Search a 2D Matrix (Using Binary Search)
@@ -98,6 +101,18 @@ problem: 103. Binary Tree Zigzag Level Order Traversal (Using Loop-BFS)
 
 
 problem: 98. Validate Binary Search Tree (Using BST concept taking min, max as null)
+problem: 701. Insert into a Binary Search Tree (Using Recursion)
+problem: 450. Delete Node in a BST (Using Recursion)
+problem: 230. Kth Smallest Element in a BST(Using Recursion)
+problem: 235. Lowest Common Ancestor of a Binary Search Tree (Using Recursion)
+problem: 129. Sum Root to Leaf Numbers (Using Recursion)
+
+problem: 841. Keys and Rooms - Graph (Using BFS)
+problem: 200. Number of Islands - Graph (Using DFS-Recursion)
+
+problem: 62. Unique Paths (Using DP)
+problem: 300. Longest Increasing Subsequence (Using DP)
+
 
 
 ----------------------------- HARD --------------------------------
@@ -110,3 +125,6 @@ problem: 992. Subarrays with K Different Integers(Using Sliding Window)(consider
 problem: 25. Reverse Nodes in k-Group - Linked List (Using Recursion) [variant for medium 24]
 
 problem: 42. Trapping Rain Water (Using Stack)
+
+
+Adding here by git bash
