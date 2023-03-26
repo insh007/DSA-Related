@@ -59,7 +59,7 @@
 // const result = sum4(4);
 // console.log(result); // 2
 
-//--------------------Closure scope chain simple one --------------
+//--------------------Closure scope chain or currrying simple one --------------
 function outermost(){
     const fname = "Inshad"
     return function(){
