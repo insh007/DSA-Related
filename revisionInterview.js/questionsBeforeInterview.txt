@@ -1,7 +1,8 @@
 ----------------------------- EASY --------------------------------
 // LeetCode
-problem: 219. Contains Duplicate II  (using object as map)
+problem: 219. Contains Duplicate II  (using object as map) Array
 problem: 88. Merge Sorted Array (multiple pointers)
+problem: 28. Find the Index of the First Occurrence in a String (Using Two pointers)
 problem: 231. Power of Two (using loop / using Recursion)
 problem: 125. Valid Palindrome 
 problem: 344. Reverse String modifying the input array in-place (Using Two pointers / for loop )
@@ -84,7 +85,7 @@ problem: 74. Search a 2D Matrix (Using Binary Search)
 problem: 36. Valid Sudoku (Using Set & Matrix concept)
 problem: 53. Maximum Subarray (Using Kadane's algorithm )
 problem: 46. Permutations (Using Backtracking)
-problem: 15. 3Sum (Using Three pointers)
+problem: 15. 3Sum (Using Three pointers) Array
 problem: 122. Best Time to Buy and Sell Stock II (Using DP)
 problem: 2. Add Two Numbers - Linked List (Using Recursion)
 problem: 24. Swap Nodes in Pairs - Linked List(Using Recursion)[variant Hard 25]

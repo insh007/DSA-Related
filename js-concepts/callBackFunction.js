@@ -2,13 +2,13 @@
 
 
 // here call me will be a call back function because it is pass into another function as an argument
-function callMe(){   
-    console.log("Inshad")
-}
+// function callMe(){   
+//     console.log("Inshad")
+// }
 
-function myFun(name, callBack){
-    console.log("Hello" , name)
-    callBack()
-}
+// function myFun(name, callBack){
+//     console.log("Hello" , name)
+//     callBack()
+// }
 
-myFun("Ali", callMe)   
+// myFun("Ali", callMe)   

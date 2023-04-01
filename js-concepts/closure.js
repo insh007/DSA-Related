@@ -59,7 +59,7 @@
 // const result = sum4(4);
 // console.log(result); // 2
 
-//--------------------Closure scope chain simple one --------------
+//--------------------Currying or Closure scope chain simple one --------------
 function outermost(){
     const fname = "Inshad"
     return function(){
@@ -79,3 +79,5 @@ console.log(outermost()()()())  // chaining invoked or called
 // const c = b()
 // const result = c()
 // console.log(result)  // called after resolve chaining
+// DR17R04-QQAQPWA-5L2ZNQ9-AA8ZB9G
+// 44C4-CCA7-89F6-E02A-D833

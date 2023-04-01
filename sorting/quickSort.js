@@ -15,7 +15,7 @@ function partition(arr, low, high){
     for(let j=low; j<=high-1; j++){
         if(arr[j] < pivot){
             i++             // Increment index of smaller element
-            swap(arr, i, j)
+            swap(arr, i, j)  
         }
     }
     swap(arr, i+1, high)
