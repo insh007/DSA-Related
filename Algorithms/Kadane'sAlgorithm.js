@@ -7,26 +7,19 @@
 
 // Using Kadane's algorithm
 var maxSubArray = function(nums) {
-    let currentSum = nums[0];
-    let maxSum = nums[0];
+    let maxSum = nums[0]  // maximum sum seen so far
+    let currSum = 0   // This will track current sum
 
-    for(let i=1; i<nums.length; i++){
-        currentSum += nums[i]
+    for(let i=0; i<nums.length; i++){
+//if currSum is negative then it will not contribute to the maxSum then set negative value to as 0        
+        if(currSum < 0) {
+            currSum = 0
+        }
+        currSum = currSum + nums[i] //keep track array to check currSum
 
-        // if(currentSum < nums[i]){
-        //     currentSum = nums[i]
-        // }
-        //---OR
-        currentSum = Math.max(currentSum , nums[i])  // make fast
-
-        // if(currentSum > maxSum){
-        //     maxSum = currentSum 
-        // }
-        //---OR
-        maxSum = Math.max(maxSum, currentSum )
+        maxSum = Math.max(currSum, maxSum) //update maxSum seen so far if currSum maximum than maxSum 
     }
     return maxSum   // TC -> O(n) & SC -> O(1)
-
 
     //Brute Force -> O(n^2)
     // let maxSum = 0

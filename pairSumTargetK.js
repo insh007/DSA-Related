@@ -24,19 +24,6 @@ function gtePairs(arr,k){
 console.log(gtePairs(arr, k))
 // console.log(map)
 
-// let map = new Map()
-// map.set(0,1)
-// console.log(map)
-
-
-
-
-
-
-
-
-
-
 
 
 

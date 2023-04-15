@@ -54,6 +54,55 @@ console.log(mergeSort(arr, 0, r))
 // SC -> O(n) since extra result array is used to copy original array arr elements
 
 
+//================= in this code variable naming some related :
+function merge(arr, left, mid, right){
+    let left_new = left
+    let mid_increment = mid+1
+    let k = left
+    let result = []
 
+    while(left_new<=mid && mid_increment<=right){
+        if(arr[left_new] < arr[mid_increment]){
+            result[k] = arr[left_new]
+            left_new++
+        }
+        else{
+            result[k] = arr[mid_increment]
+            mid_increment++
+        }
+        k++
+    }
+
+    if(left_new>mid){
+        while(mid_increment<=right){
+            result[k] = arr[mid_increment]
+            mid_increment++
+            k++
+        }
+    }else{
+        while(left_new<=mid){
+            result[k] = arr[left_new]
+            left_new++
+            k++
+        }
+    }
+
+    for(let m=left; m<=right; m++){
+        arr[m] = result[m]
+    }
+
+}
+
+function mergesort(arr, left, right){
+    if(left<right){
+        let mid = left + Math.floor((right-left)/2)
+
+        mergesort(arr, left, mid)
+        mergesort(arr, mid+1, right)
+        merge(arr, left, mid, right)
+    }
+
+    return arr
+}
 
 

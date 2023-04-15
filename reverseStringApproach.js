@@ -40,6 +40,7 @@ console.log(rev(str))  // TC -> O(n)  and SC(n) (using extra array to store n no
 
 
 // Method: 4  (In Place reverse -> Bole to extra space use nhi krne ka or space O(1) khane ka)
+// NOTE: You can't. JavaScript strings are immutable, meaning the memory allocated to each cannot be written to, making true "in place" reversals impossible.
 let s = 'hello'
 function phirseReverseKarega(str){
     let left = 0
@@ -53,7 +54,7 @@ function phirseReverseKarega(str){
     }
     return str
 }
-console.log(phirseReverseKarega(s)) // TC -> O(n)  and SC(1) 
+console.log(phirseReverseKarega(s)) // TC -> O(n)  and SC(1) WHY ??? 
 
 // Method : 5  (using In Built method)
 // let str = 'hello'

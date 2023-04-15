@@ -8,15 +8,19 @@
 
 //Mehtod : 
 
-var isPalindrome = function(s) {
+var isPalindrome = function (s) {
     let newstr = ""
-    for(let i=0; i<s.length; i++){
+    for (let i = 0; i < s.length; i++) {
         let c = s[i].toLowerCase()
-        if(isAlphaNumeric(c)){
-            newstr += c
+        // if (isAlphaNumeric(c)) {
+        //     newstr += c
+        // }
+        // OR
+        if ((c >= "a" && c <= "z") || (c >= "0" && c <= "9")) {
+            newstr += c;
         }
     }
-    if(newstr == reverse(newstr))return true
+    if (newstr == reverse(newstr)) return true
     else return false
 };
 
@@ -30,16 +34,16 @@ var isPalindrome = function(s) {
 // }
 
 // reverse using loop
-function reverse(str){
+function reverse(str) {
     let revstr = ""
-    for(let i=str.length-1; i>=0; i--){
+    for (let i = str.length - 1; i >= 0; i--) {
         revstr += str[i]
     }
     return revstr
 }
-function isAlphaNumeric(ch){
-  let regex = /^[a-z0-9]+$/gi
-  return regex.test(ch)
+function isAlphaNumeric(ch) {
+    let regex = /^[a-z0-9]+$/gi
+    return regex.test(ch)
 }
 
 

@@ -2,9 +2,9 @@
 // of Bubble sort
 // An optimized version of Bubble Sort
 function bubbleSort(arr, n) {
-    for (let i = 0; i < n - 1; i++) {  //n-1 -> to unconsider last largest element which will found after 1st pass
+    for (let i = 0; i < n - 1; i++) {   // n -> arr.length for last index we get arr.length-1 -> n-1  
         let swapped = false;  //Optimization -> TC -> O(n)
-        for (let j = 0; j < n - i - 1; j++) {    // n - i - 1 -> n also work
+        for (let j = 0; j < n - i - 1; j++) {    // n-i- 1 -> n-1 also work , to unconsider last largest element which will found after 1st pass
             if (arr[j] > arr[j + 1]) {
                 // swap arr[j] and arr[j+1]
                 let temp = arr[j];

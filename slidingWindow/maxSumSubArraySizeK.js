@@ -33,3 +33,21 @@ function maximumSumSubarray(K, Arr, N) {
 }
 // console.log(maximumSumSubarray(2, [100, 200, 300, 400], 4))
 // console.log(maximumSumSubarray(3, [11, 4, 3, 10, 5, 6, 4], 7))
+
+
+
+//Find : Largest product of a subarray of size k 
+// function findMaxProduct(arr,k){
+//     //code here
+//     let product = 1
+//     let maxProduct = 1
+//     for(let i=0; i<k; i++){
+//         product *= arr[i]
+//     }
+//     maxProduct = product
+//     for(let i=k; i<arr.length; i++){
+//         product = (product * arr[i]) / arr[i-k]
+//         maxProduct = Math.max(maxProduct, product)
+//     }
+//     return maxProduct
+//  }

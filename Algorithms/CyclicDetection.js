@@ -57,25 +57,45 @@ var findDuplicate = function(nums) {
 // *Those numbers for which this process ends in 1 are happy.
 // Return true if n is a happy number, and false if not.
 
+
+// Helper funtion to calculate sum of the squares of its digits
 function calSum(n){
     let sum = 0
     while(n>0){
-        let rem = n % 10
-        sum = sum + (rem*rem)
-        n = Math.floor(n/10)
+        let last_digit = n%10  // this will give last digit of a number like 9 in case of 19 first time 
+        sum = sum + (last_digit*last_digit) // here we do calculation of sum of square of digits
+        n = Math.floor(n/10) // remove the last digit like remove 9 in case of first time in 19
     }
     return sum
 }
-// Using Cyclic Detection Algorithm
-var isHappy = function(n) {    // main method
-    let slow = n
-    let fast = calSum(n)
 
-    while(fast!=1 && slow!=fast){
-        slow = calSum(slow)
+// using cycle detection algorithm
+var isHappy = function(n) {
+    let slow = n
+    let fast = n
+
+    while(true){
+        slow = calSum(slow) 
         fast = calSum(calSum(fast))
-    
+        if(slow == fast){
+            break
+        } 
     }
-    return fast == 1
-    // return fast==1 ? true : false  // OR
-};
+
+    slow = n
+    while(slow != fast){
+        slow = calSum(slow) 
+        fast = calSum(fast)
+    }
+
+/*======================== OR ====================== */
+
+    // do{
+    //     slow = calSum(slow) 
+    //     fast = calSum(calSum(fast))
+    // }while(slow != fast)
+
+/*======================== OR ====================== */    
+
+    return slow==1
+}

@@ -24,3 +24,22 @@ function finder(str){
     return (`${actualWord}, ${count}`)
 }
 console.log(finder(str))
+
+
+//=================== Another Approach =========================
+function str_length(str){
+    let arr = str.split(" ")
+    let maxLength = 0
+    let word = ''
+
+    for(let i=0; i<arr.length; i++){
+        if(maxLength < arr[i].length){
+            maxLength = arr[i].length
+            word = arr[i]
+        }
+    }
+
+    return `word: ${word} , length: ${maxLength}`
+}
+
+console.log(str_length(str))

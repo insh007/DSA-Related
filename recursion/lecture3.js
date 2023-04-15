@@ -52,15 +52,15 @@ function sen(s){
 // let arr = [[1,2],[7,8], [44,14],[20,45]]  
 
 //Method:1 (Using Recursion)
-// function flatten(arr){
-//     let flat = []
-//     for(let i=0; i<arr.length; i++){
-//         if(Array.isArray(arr[i]) == false) flat.push(arr[i])
-//         else  flat = flat.concat(flatten(arr[i]))
-//     }
-//     return flat
-// }
-// console.log(flatten(arr));
+function flatten(arr){
+    let flat = []
+    for(let i=0; i<arr.length; i++){
+        if(Array.isArray(arr[i]) == false) flat.push(arr[i])
+        else  flat = flat.concat(flatten(arr[i]))
+    }
+    return flat
+}
+console.log(flatten(arr));
 
 // Mthod:2 (Loop)  ----> failed approach ??
 // for(let i=0; i<arr.length; i++){

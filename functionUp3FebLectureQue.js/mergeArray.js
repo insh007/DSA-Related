@@ -1,3 +1,4 @@
+// Get the resulting output from arr1 and arr2
 let arr1 = [
     { name: "a", value: 123},
     { name: "b", value: 666}
@@ -7,6 +8,7 @@ let arr2 = [
     { name: "d", value: 999},
     { name: "b", value: 111}
 ]
+
 //output:
 let result = [
     { name: "a", value: 123},
@@ -15,33 +17,24 @@ let result = [
     { name: "d", value: 999}
 ]
 
-let map1 = new Map()
+/* ------------- Solution ---------------- */
+let merge = [...arr1, ...arr2]
+let map  = new Map()
+for(let i=0; i<merge.length; i++){
+    let ch = merge[i].name
+
+    if(map.has(ch)){
+        let val = merge[i].value
+        if(map.get(ch) > val){
+            map.set(ch, val)
+        }
+    }
+
+    map.set(ch, merge[i].value)
+}
 
 let res = []
-for(let i=0; i<arr1.length; i++){
-    let alphabet = arr1[i].name
-    if(map1.has(alphabet)){
-        let digit = arr1[i].value
-        if(map1.get(alphabet) < digit){
-            map1.set(alphabet, digit)
-            
-        }
-    }
-    map1.set(alphabet, arr1[i].value)
-}
-
-for(let i=0; i<arr2.length; i++){
-    let alphabet = arr2[i].name
-    if(map1.has(alphabet)){
-        let digit = arr2[i].value
-        if(map1.get(alphabet) < digit){
-            map1.set(alphabet, digit)
-        }
-    }
-    map1.set(alphabet, arr2[i].value)
-}
-
-for(let [key, value] of map1){
-    res.push({name:key, value:value})
+for(let [key, value] of map){
+    res.push({name: key, value: value})
 }
 console.log(res)

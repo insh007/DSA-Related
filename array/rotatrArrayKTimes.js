@@ -16,9 +16,9 @@ function revrese(arr, left, right){
 
 }
 function rotate(arr,k){
-    revrese(arr, 0, arr.length-1)
-    revrese(arr, 0, k-1)
-    revrese(arr, k, arr.length-1)
+    revrese(arr, 0, arr.length-1) // step 1: reverse complete array
+    revrese(arr, 0, k-1)          // step 2: revrese first k elements
+    revrese(arr, k, arr.length-1) // step 3: reverse rest elements except k elements
     return arr    
 }
 console.log(rotate([12, 3, 6, 2, 9, 11], 3 ))

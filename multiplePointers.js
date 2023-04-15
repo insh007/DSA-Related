@@ -62,31 +62,31 @@
 // }
 
 // Method 2: Two pointer
-// let arr = [1, 2, 5, 8, 9, 14]
-// function closestSumPairs(arr) {
-//     arr.sort((a, b) => a - b); // sort the array
-//     let closest = Infinity;
-//     let closestPairs = [];
-//     let left = 0;
-//     let right = arr.length - 1;
-//     while (left < right) {
-//         let sum = arr[left] + arr[right];
-//         let diff = Math.abs(12 - sum);
-//         if (diff < closest) {
-//             closest = diff;
-//             closestPairs = [[ arr[left], arr[right] ]];
-//         } else if (diff === closest) {
-//             closestPairs.push([arr[left], arr[right]]);
-//         }
-//         if (sum < 12) {
-//             left++;
-//         } else {
-//             right--;
-//         }
-//     }
-//     return closestPairs;
-// }
-// console.log(closestSumPairs(arr))
+let arr = [1, 2, 5, 8, 9, 14]
+function closestSumPairs(arr) {
+    arr.sort((a, b) => a - b); // sort the array
+    let closest = Infinity;
+    let closestPairs = [];
+    let left = 0;
+    let right = arr.length - 1;
+    while (left < right) {
+        let sum = arr[left] + arr[right];
+        let diff = Math.abs(12 - sum);
+        if (diff < closest) {
+            closest = diff;
+            closestPairs = [[ arr[left], arr[right] ]];
+        } else if (diff === closest) {
+            closestPairs.push([arr[left], arr[right]]);
+        }
+        if (sum < 12) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return closestPairs;
+}
+console.log(closestSumPairs(arr))
 
 
 

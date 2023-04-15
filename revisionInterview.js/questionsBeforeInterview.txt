@@ -1,6 +1,5 @@
 ----------------------------- EASY --------------------------------
 // LeetCode
-problem: 219. Contains Duplicate II  (using object as map) Array
 problem: 88. Merge Sorted Array (multiple pointers)
 problem: 28. Find the Index of the First Occurrence in a String (Using Two pointers)
 problem: 231. Power of Two (using loop / using Recursion)
@@ -12,9 +11,10 @@ problem: 268. Missing Number(using formula-> missingNumber = sumConsecutive-sum)
 problem: 2114. Maximum Number of Words Found in Sentences(using nested for loop)
 problem: 1672. Richest Customer Wealth(using nested for loop)
 problem: 202. Happy Number (using "Cycle Detection" algorithm)
-problem: 1. Two Sum(Using Map - sum of pair equal to target like CZ)
-problem: 217. Contains Duplicate (Using Map)
-problem: 26. Remove Duplicates from Sorted Array(Using Two pointers with for Loop)
+problem: 1. Two Sum(Using Map - sum of pair equal to target like CZ) #Revised
+problem: 217. Contains Duplicate (Using Map) #Revised
+problem: 219. Contains Duplicate II  (using object as map) Array #Revised
+problem: 26. Remove Duplicates from Sorted Array(Using Two pointers with for Loop) #Revised
 problem: 2379. Minimum Recolors to Get K Consecutive Black Blocks(Using Sliding window variable length Without Map)
 problem: 13. Roman to Integer(Using Map(hardcoded set) / Using object)
 problem: 20. Valid Parentheses (Using Stack + Map)
@@ -58,15 +58,15 @@ problem: 938. Range Sum of BST (Using Recursion)
 
 ----------------------------- MEDIUM --------------------------------
 // LeetCode
-problem: 1456. Maximum Number of Vowels in a Substring of Given Length (Sliding Window fixed size)
-problem: 3. Longest Substring Without Repeating Characters (variable Sliding Window)
+problem: 1456. Maximum Number of Vowels in a Substring of Given Length (Sliding Window fixed size) #Revised
+problem: 3. Longest Substring Without Repeating Characters (variable Sliding Window) #Revised
 problem: 424. Longest Repeating Character Replacement (Using Sliding Window)
 problem: 1358. Number of Substrings Containing All Three Characters (Using Sliding Window / Using SW + Prefix)
 problem: 1248. Count Number of Nice Subarrays (Using Sliding Window + Prefix)
-problem: 1004. Max Consecutive Ones III(Using Sliding Window)(Sliding Window learn from here) // find length of maximum subarray with atmost k 0's
-problem: 904. Fruit Into Baskets(Using Sliding Window) // find length of maximum subarray with atmost k distinct elements
+problem: 1004. Max Consecutive Ones III(Using Sliding Window)(Sliding Window learn from here) // find length of maximum subarray with atmost k 0's  #Revised
+problem: 904. Fruit Into Baskets(Using Sliding Window) // find length of maximum subarray with atmost k distinct elements   #Revised
 problem: 75. Sort Colors (Multiple pointers concept)
-problem: 167. Two Sum II - Input Array Is Sorted (Two pointers / Binary Search)
+problem: 167. Two Sum II - Input Array Is Sorted (Two pointers / Map + compliment /Binary Search) #Revised
 problem: 1823. Find the Winner of the Circular Game (Using Recursion)
 problem: 50. Pow(x, n) (using Recursion)
 problem: 881. Boats to Save People (Two pointers)
@@ -83,7 +83,7 @@ problem: 875. Koko Eating Bananas (Using Binary Search)
 problem: 2187. Minimum Time to Complete Trips (Using Binary Search)
 problem: 74. Search a 2D Matrix (Using Binary Search)
 problem: 36. Valid Sudoku (Using Set & Matrix concept)
-problem: 53. Maximum Subarray (Using Kadane's algorithm )
+problem: 53. Maximum Subarray (Using Kadane's algorithm - DP )  #Revised
 problem: 46. Permutations (Using Backtracking)
 problem: 15. 3Sum (Using Three pointers) Array
 problem: 122. Best Time to Buy and Sell Stock II (Using DP)
@@ -127,5 +127,3 @@ problem: 25. Reverse Nodes in k-Group - Linked List (Using Recursion) [variant f
 
 problem: 42. Trapping Rain Water (Using Stack)
 
-
-Adding here by git bash
