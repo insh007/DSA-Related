@@ -38,6 +38,20 @@
 // const myObj = new person("Mohan Das", 45)
 // console.log(myObj)
 
+// ----------------------- 5 (Factory Funciton) -----------------------
+function createCircle(radius) {
+    return {
+        radius,
+        draw: function () {
+            console.log("draw")
+        }
+    }
+}
+
+const create = createCircle(1)
+console.log(create)
+create.draw()
+
 
 /*========= prototype (other concept) =========== */
 // 'prototype' is a property of a constructor function that is used to set the prototype of objects created by that constructor function. In other words, when you create an object using a constructor function with the new keyword, the object's prototype is set to the constructor function's prototype property.
