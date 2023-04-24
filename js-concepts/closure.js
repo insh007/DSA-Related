@@ -20,7 +20,7 @@
 // function outerfn(a,b){
 //     function innerfn(){
 //        console.log(a + " " +  b)
-       
+
 //     }
 //     innerfn() 
 // }
@@ -59,14 +59,14 @@
 // const result = sum4(4);
 // console.log(result); // 2
 
-//--------------------Closure scope chain or currrying simple one --------------
-function outermost(){
+//--------------------Closure scope chain  --------------
+function outermost() {
     const fname = "Inshad"
-    return function(){
-        const lname = "Ali" 
-        return function(){
+    return function () {
+        const lname = "Ali"
+        return function () {
             const cr = "insh007"
-            return function(){
+            return function () {
                 return `${fname} ${lname} ${cr}`
             }
         }
@@ -79,5 +79,37 @@ console.log(outermost()()()())  // chaining invoked or called
 // const c = b()
 // const result = c()
 // console.log(result)  // called after resolve chaining
-// DR17R04-QQAQPWA-5L2ZNQ9-AA8ZB9G
-// 44C4-CCA7-89F6-E02A-D833
+
+
+//-------------------- currrying simple one --------------
+
+//---------- without currying 
+// function sum(a,b,c){
+//     return a+b+c
+// }
+// console.log(sum(1,2,3))
+
+//---------- currying
+// function sum(a){
+//   return function(b){
+//     return function(c){
+//       return a+b+c
+//     }
+//   }
+// }
+// console.log(sum(2)(3)(1))
+
+//-------------- Infinite currying
+function sum(a) {
+    return function (b) {
+        // this will check undefined only but if we use !b instead of b == undefined then it will check all
+        // falsy value like: false, null, undefined, 0, NaN, or an empty string '' but it will peoduce error
+        // when we will pass 0 in argument because 0 will goes to !b condiiton which return a and furtur we
+        // we have () left whcih result an error: TypeError: sum(...)(...)(...) is not a function 
+        if (b == undefined) {  
+            return a
+        }
+        return sum(a + b)
+    }
+}
+console.log(sum(2)(3)(1)(5)())
