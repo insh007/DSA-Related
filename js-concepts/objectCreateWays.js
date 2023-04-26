@@ -39,6 +39,7 @@
 // console.log(myObj)
 
 // ----------------------- 5 (Factory Funciton) -----------------------
+// Factory Function: A funciton which return an object without using the new keyword is called a Factory Fuction.
 function createCircle(radius) {
     return {
         radius,
