@@ -8,9 +8,9 @@ function Circle(radius){
     // }
 
 
-    this.getDefaultLocation = function() {
-        return defaultLocation
-    }
+    // this.getDefaultLocation = function() {
+    //     return defaultLocation
+    // }
 
     this.draw = function() {
         // computeOptimumLocation(0.1)
@@ -38,4 +38,5 @@ const circle = new Circle(10)
 // circle.getDefaultLocation()
 // OR
 circle.defaultLocation = 1
+console.log(circle.defaultLocation)
 circle.draw()

@@ -60,9 +60,9 @@ problem: 938. Range Sum of BST (Using Recursion)
 // LeetCode
 problem: 1456. Maximum Number of Vowels in a Substring of Given Length (Sliding Window fixed size) #Revised
 problem: 3. Longest Substring Without Repeating Characters (variable Sliding Window) #Revised
-problem: 424. Longest Repeating Character Replacement (Using Sliding Window)
-problem: 1358. Number of Substrings Containing All Three Characters (Using Sliding Window / Using SW + Prefix)
-problem: 1248. Count Number of Nice Subarrays (Using Sliding Window + Prefix)
+problem: 424. Longest Repeating Character Replacement (Using Sliding Window) #Revised
+problem: 1358. Number of Substrings Containing All Three Characters (Using Sliding Window / Using SW + Prefix) #Revised
+problem: 1248. Count Number of Nice Subarrays (Using Sliding Window + Prefix) #Revised
 problem: 1004. Max Consecutive Ones III(Using Sliding Window)(Sliding Window learn from here) // find length of maximum subarray with atmost k 0's  #Revised
 problem: 904. Fruit Into Baskets(Using Sliding Window) // find length of maximum subarray with atmost k distinct elements   #Revised
 problem: 75. Sort Colors (Multiple pointers concept)
@@ -118,10 +118,10 @@ problem: 300. Longest Increasing Subsequence (Using DP)
 
 ----------------------------- HARD --------------------------------
 // LeetCode
-problem:239 Sliding Window Maximum (Maximum of all subarrays of size k)(Using Sliding Window With Dequeue)
-GFG(variant): First negative integer in every window of size k (Using Sliding Window With Dequeue) 
+problem:239 Sliding Window Maximum (Maximum of all subarrays of size k)(Using Sliding Window With Dequeue) #Revised
+GFG(variant): First negative integer in every window of size k (Using Sliding Window With Dequeue) #Revised 
 
-problem: 992. Subarrays with K Different Integers(Using Sliding Window)(consider- [count of subarray with Atmost K Different Integers - count of subarray with Atmost K-1 Different Integers])
+problem: 992. Subarrays with K Different Integers(Using Sliding Window)(consider- [count of subarray with Atmost K Different Integers - count of subarray with Atmost K-1 Different Integers]) #Revised
 
 problem: 25. Reverse Nodes in k-Group - Linked List (Using Recursion) [variant for medium 24]
 

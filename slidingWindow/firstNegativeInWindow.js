@@ -11,8 +11,8 @@
 // {-8, 2} = -8
 // {2, 3} = 0 (does not contain a negative integer)
 // {3, -6} = -6
-// {-6, 10} = -6
 
+// {-6, 10} = -6
 let nums = [-8, 2, 3, -6, 10]
 let k = 2
 function printFirstNegativeInteger(k, nums) {

@@ -9,17 +9,30 @@
 var maxSubArray = function(nums) {
     let maxSum = nums[0]  // maximum sum seen so far
     let currSum = 0   // This will track current sum
+    let startIndex = 0
+    let endIndex = 0
+    let currentStartIndex = 0
 
     for(let i=0; i<nums.length; i++){
 //if currSum is negative then it will not contribute to the maxSum then set negative value to as 0        
         if(currSum < 0) {
             currSum = 0
+            currentStartIndex = i
         }
         currSum = currSum + nums[i] //keep track array to check currSum
 
-        maxSum = Math.max(currSum, maxSum) //update maxSum seen so far if currSum maximum than maxSum 
+        // maxSum = Math.max(currSum, maxSum) //update maxSum seen so far if currSum maximum than maxSum 
+
+        if(currSum > maxSum){
+            maxSum = currSum
+            startIndex = currentStartIndex
+            endIndex = i
+        }
     }
-    return maxSum   // TC -> O(n) & SC -> O(1)
+
+    let maxSubArray = nums.slice(startIndex, endIndex+1)
+    return {maxSubArray, maxSum}
+    // return maxSum   // TC -> O(n) & SC -> O(1)
 
     //Brute Force -> O(n^2)
     // let maxSum = 0
@@ -34,3 +47,5 @@ var maxSubArray = function(nums) {
     // }
     // return maxSum
 };
+
+console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))

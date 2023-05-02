@@ -59,6 +59,7 @@ const config = {
   // Initialize the streets array with the names of the streets at the intersection and start the green light cycle
   function initialize() {
     streets = config.streetNames.map((name) => new Street(name));
+    console.log(streets)
     startGreenLightCycle();
   }
   
