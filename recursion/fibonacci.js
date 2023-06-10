@@ -27,8 +27,9 @@ function fib(n){
         f[i] = f[i-1] + f[i-2]
     }
     
-    console.log(f)
-    return f[n]
+    // console.log(f)
+    return f
+    // return f[n]
 
 }
 console.log(fib(7))

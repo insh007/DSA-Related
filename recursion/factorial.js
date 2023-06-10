@@ -9,4 +9,18 @@ function factorial(n){
 
     return n * factorial(n-1)
 }
-console.log(factorial(0))  
+// console.log(factorial(0)) 
+
+// using Loop
+
+function fact(n){
+    let product = 1
+
+    for(let i=1; i<=n; i++){
+        product = product * i
+    }
+
+    return product
+}
+
+console.log(fact(0))

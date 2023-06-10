@@ -15,7 +15,7 @@ var isPalindrome = function (s) {
         // if (isAlphaNumeric(c)) {
         //     newstr += c
         // }
-        // OR
+        // OR (without Regex)
         if ((c >= "a" && c <= "z") || (c >= "0" && c <= "9")) {
             newstr += c;
         }

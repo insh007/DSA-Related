@@ -12,6 +12,7 @@ function calPrimeAgain(n){
             }
         }
     }
+    
     // Print all prime numbers
     for(let i=2; i<=n; i++){
         if(primes[i] == true){

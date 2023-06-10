@@ -1,10 +1,10 @@
 ----------------------------- EASY --------------------------------
 // LeetCode
-problem: 88. Merge Sorted Array (multiple pointers)
+problem: 88. Merge Sorted Array (multiple pointers) #Revised
 problem: 28. Find the Index of the First Occurrence in a String (Using Two pointers)
 problem: 231. Power of Two (using loop / using Recursion)
 problem: 125. Valid Palindrome 
-problem: 344. Reverse String modifying the input array in-place (Using Two pointers / for loop )
+problem: 344. Reverse String modifying the input array in-place (Using Two pointers / for loop ) #Revised
 problem: 412. Fizz Buzz(uisng loop & if-else)
 problem: 704. Binary Search (using Loop / using Recursion) (concept code related question)
 problem: 268. Missing Number(using formula-> missingNumber = sumConsecutive-sum)
@@ -16,11 +16,12 @@ problem: 217. Contains Duplicate (Using Map) #Revised
 problem: 219. Contains Duplicate II  (using object as map) Array #Revised
 problem: 26. Remove Duplicates from Sorted Array(Using Two pointers with for Loop) #Revised
 problem: 2379. Minimum Recolors to Get K Consecutive Black Blocks(Using Sliding window variable length Without Map)
+problem: 2062. Count Vowel Substrings of a String (using map) #Revised
 problem: 13. Roman to Integer(Using Map(hardcoded set) / Using object)
 problem: 20. Valid Parentheses (Using Stack + Map)
 problem: 349. Intersection of Two Arrays(Using Map / Using includes + indexOf)
 problem: 350. Intersection of Two Arrays II (Using Map)
-problem: 121. Best Time to Buy and Sell Stock(Using DP)
+problem: 121. Best Time to Buy and Sell Stock(Using DP) #Revised
 problem: 876. Middle of the Linked List (Linked List using slow/fast pointers)
 problem: 566. Reshape the Matrix(Using Matrix concept)
 problem: 118. Pascal's Triangle
@@ -41,7 +42,7 @@ problem: 509. Fibonacci Number (Using DP)
 problem: 144. Binary Tree Preorder Traversal (Using Recursion-DFS)
 problem: 145. Binary Tree Postorder Traversal (Using Recursion-DFS)
 problem: 94. Binary Tree Inorder Traversal (Using Recursion-DFS)
-problem: 104. Maximum Depth of Binary Tree (Using Recursion-DFS)
+problem: 104. Maximum Depth of Binary Tree (Using Recursion-DFS) #Revised
 problem: 226. Invert Binary Tree (Using Recursion-DFS)
 problem: 112. Path Sum (Using Recursion-DFS)
 problem: 100. Same Tree (Using Recursion-DFS)
@@ -96,9 +97,9 @@ problem: 735. Asteroid Collision (Using Stack)
 problem: 2211. Count Collisions on a Road (Using Stack)
 problem: 2390. Removing Stars From a String (Using Stack)
 problem: 155. Min Stack (Using Stack -> Two Stack use)
-problem: 102. Binary Tree Level Order Traversal (Using Loop-BFS / Using Recursion-DFS)
+problem: 102. Binary Tree Level Order Traversal (Using Loop-BFS / Using Recursion-DFS) #Revised
 problem: 107. Binary Tree Level Order Traversal II (Using Loop-BFS)
-problem: 103. Binary Tree Zigzag Level Order Traversal (Using Loop-BFS)
+problem: 103. Binary Tree Zigzag Level Order Traversal (Using Loop-BFS) #Revised
 
 
 problem: 98. Validate Binary Search Tree (Using BST concept taking min, max as null)
